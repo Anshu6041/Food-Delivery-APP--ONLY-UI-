@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5>Food Delivery App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/a5c4eab274.js" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+
+    <!-- <script src="app.js"></script> -->
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="food-shopping-logo-template-design_460848-10299.jpg" <h1 id="eureka_1"> <i
+                    class="fa-solid fa-ghost"></i>Eureka</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path
+                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M15 15L17 17M16 11.5C16 9.01469 13.9853 7 11.5 7C9.01469 7 7 9.01469 7 11.5C7 13.9853 9.01469 16 11.5 16C13.9853 16 16 13.9853 16 11.5Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg><span>Search</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path
+                                d="M7.69171 19.6161C8.28274 19.6161 8.57825 19.6161 8.84747 19.716C8.88486 19.7298 8.92172 19.7451 8.95797 19.7617C9.21897 19.8815 9.42793 20.0904 9.84585 20.5083C10.8078 21.4702 11.2887 21.9512 11.8805 21.9955C11.96 22.0015 12.04 22.0015 12.1195 21.9955C12.7113 21.9512 13.1923 21.4702 14.1541 20.5083C14.5721 20.0904 14.781 19.8815 15.042 19.7617C15.0783 19.7451 15.1151 19.7298 15.1525 19.716C15.4218 19.6161 15.7173 19.6161 16.3083 19.6161H16.4173C17.9252 19.6161 18.6792 19.6161 19.1476 19.1476C19.6161 18.6792 19.6161 17.9252 19.6161 16.4173V16.3083C19.6161 15.7173 19.6161 15.4218 19.716 15.1525C19.7298 15.1151 19.7451 15.0783 19.7617 15.042C19.8815 14.781 20.0904 14.5721 20.5083 14.1541C21.4702 13.1923 21.9512 12.7113 21.9955 12.1195C22.0015 12.04 22.0015 11.96 21.9955 11.8805C21.9512 11.2887 21.4702 10.8078 20.5083 9.84585C20.0904 9.42793 19.8815 9.21897 19.7617 8.95797C19.7451 8.92172 19.7298 8.88486 19.716 8.84747C19.6161 8.57825 19.6161 8.28274 19.6161 7.69171V7.58269C19.6161 6.07479 19.6161 5.32083 19.1476 4.85239C18.6792 4.38394 17.9252 4.38394 16.4173 4.38394H16.3083C15.7173 4.38394 15.4218 4.38394 15.1525 4.28405C15.1151 4.27018 15.0783 4.25491 15.042 4.23828C14.781 4.11855 14.5721 3.90959 14.1541 3.49167C13.1923 2.52977 12.7113 2.04882 12.1195 2.00447C12.04 1.99851 11.96 1.99851 11.8805 2.00447C11.2887 2.04882 10.8078 2.52977 9.84585 3.49167C9.42793 3.90959 9.21897 4.11855 8.95797 4.23828C8.92172 4.25491 8.88486 4.27018 8.84747 4.28405C8.57825 4.38394 8.28274 4.38394 7.69171 4.38394H7.58269C6.07479 4.38394 5.32083 4.38394 4.85239 4.85239C4.38394 5.32083 4.38394 6.07479 4.38394 7.58269V7.69171C4.38394 8.28274 4.38394 8.57825 4.28405 8.84747C4.27018 8.88486 4.25491 8.92172 4.23828 8.95797C4.11855 9.21897 3.90959 9.42793 3.49167 9.84585C2.52977 10.8078 2.04882 11.2887 2.00447 11.8805C1.99851 11.96 1.99851 12.04 2.00447 12.1195C2.04882 12.7113 2.52977 13.1923 3.49167 14.1541C3.90959 14.5721 4.11855 14.781 4.23828 15.042C4.25491 15.0783 4.27018 15.1151 4.28405 15.1525C4.38394 15.4218 4.38394 15.7173 4.38394 16.3083V16.4173C4.38394 17.9252 4.38394 18.6792 4.85239 19.1476C5.32083 19.6161 6.07479 19.6161 7.58269 19.6161H7.69171Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path d="M15 9L9 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 15H14.9892M9.01076 9H9" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg><span>Offer</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path
+                                d="M17 11.8045C17 11.4588 17 11.286 17.052 11.132C17.2032 10.6844 17.6018 10.5108 18.0011 10.3289C18.45 10.1244 18.6744 10.0222 18.8968 10.0042C19.1493 9.98378 19.4022 10.0382 19.618 10.1593C19.9041 10.3198 20.1036 10.6249 20.3079 10.873C21.2513 12.0188 21.7229 12.5918 21.8955 13.2236C22.0348 13.7334 22.0348 14.2666 21.8955 14.7764C21.6438 15.6979 20.8485 16.4704 20.2598 17.1854C19.9587 17.5511 19.8081 17.734 19.618 17.8407C19.4022 17.9618 19.1493 18.0162 18.8968 17.9958C18.6744 17.9778 18.45 17.8756 18.0011 17.6711C17.6018 17.4892 17.2032 17.3156 17.052 16.868C17 16.714 17 16.5412 17 16.1955V11.8045Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M7 11.8046C7 11.3694 6.98778 10.9782 6.63591 10.6722C6.50793 10.5609 6.33825 10.4836 5.99891 10.329C5.55001 10.1246 5.32556 10.0224 5.10316 10.0044C4.43591 9.9504 4.07692 10.4058 3.69213 10.8732C2.74875 12.019 2.27706 12.5919 2.10446 13.2237C1.96518 13.7336 1.96518 14.2668 2.10446 14.7766C2.3562 15.6981 3.15152 16.4705 3.74021 17.1856C4.11129 17.6363 4.46577 18.0475 5.10316 17.996C5.32556 17.978 5.55001 17.8757 5.99891 17.6713C6.33825 17.5167 6.50793 17.4394 6.63591 17.3281C6.98778 17.0221 7 16.631 7 16.1957V11.8046Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path d="M20 10.5V9C20 5.13401 16.4183 2 12 2C7.58172 2 4 5.13401 4 9V10.5"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M20 17.5C20 22 16 22 12 22" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg><span>Help</span></li>
+                    <li><i class="fa-solid fa-user"></i><span>Sign In</span></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Zomato -->
+    <main>
+        <section id="hero9">
+            <div class="container9">
+                <div class="hero_image9 animate__animated  animate__tada">
+                    <img src="Screenshot 2024-03-07 222343-fotor-20240307225056.png" alt="hungry" width="550">
+                </div>
+                <div class="hero_content9">
+                    <h1>
+                        <span class="hi_text9">HUNGRY?</span>
+                    </h1>
+                    <h1 id="as">Order Food</h1>
+                    <h2 id="in">Online At <i class="fa-solid fa-ghost"></i>Eureka</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="h1">
+        <div class="text_con">
+            <h1 id="eureka"><i class="fa-solid fa-ghost"></i>Eureka</h1>
+            <h3 id="discover">Discover the Best Food and Drinks</h3>
+            <div class="form">
+                <label for="Job_Role">Don't Just Drool. <b>Explore and Eat</b></label>
+                <select id="Job_Role" name="Job_Role">
+                    <option value="search">
+                        <h1 id="we">Search for Restaurant, Cuisine or a Dish</h1>
+                    </option>
+                    <option value="Biryani">Biryani</option>
+                    <option value="Chole Bhature">Chole Bhature</option>
+                    <option value="Dosa">Dosa</option>
+                    <option value="Butter Chicken">Butter Chicken</option>
+                    <option value="Matar Paneer">Matar Paneer</option>
+                    <option value="Litti Chokha">Litti Chokha</option>
+                    <option value="Samosa">Samosa</option>
+                    <option value="Dal Makhni">Dal Makhni</option>
+                </select>
+                <div class="search_box">
+                    <input class="search_txt" type="text" name="" placeholder="Search Location">
+                    <a class="search_btn" href="#"></a>
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <!-- <i class="fa-solid fa-location-dot"></i> -->
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="hero">
+            <div class="hero_image">
+                <img src="pexels-photo-941869.jpeg" alt="Food" width="554" height="210">
+            </div>
+            <div class="hero_con">
+                <div class="tag">
+                    50% Off on All Products
+                </div>
+                <h1>Enjoy Your Delicious Food</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil dignissimos animi asperiores
+                    eos, cupiditate ullam vitae in laboriosam veritatis!</p>
+                <button class="explore">Explore Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="f1">
+            <img src="gift-voucher-coupon-popup-banner-design-template-marketing-promotion-program-vector-design_2825-296.avif"
+                alt="Discount" width="100">
+            <div class="f1_con">
+                <h3>Discount Voucher</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="f1">
+            <img src="food-drink-hand-drawn-flat-healthy-food-logo_23-2149632256.avif" alt="Fresh" width="100">
+            <div class="f1_con">
+                <h3>Fresh and Healthy Food</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="f1">
+            <img src="delivery-service-with-mask-design_23-2148504209.jpg" width="100">
+            <div class="f1_con">
+                <h3>Fast Home Delivery</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Divider -->
+    <div class="divider"></div>
+    </div>
+    <div class="top">Top Restaurant Chains in Patna City</div>
+
+    <!-- card -->
+    <section class="work">
+        <div class="grid_item">
+            <div class="card">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image">
+                    <img src="rd38-Yo-China-exterior-2022-10-1.jpg" alt="YO_China" width="300" height="210">
+                </div>
+                <div class="card_content">
+                    <h2>Yo China!</h2>
+                    <h4><i class="fa-solid fa-utensils"></i> Seafood, Ice Cream, Desserts</h4>
+                    <h4><i class="fa-solid fa-location-dot"></i> Gurhatta, Patna</h4>
+                </div>
+            </div>
+        </div>
+        <div class="grid_item">
+            <div class="card">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image">
+                    <img src="270691422_116235707582477_2720766318559975380_n.jpg" alt="BBK" width="300" height="210">
+                </div>
+                <div class="card_content">
+                    <h2>BBK Brewbakes Cafe & Restaurant</h2>
+                    <h4><i class="fa-solid fa-utensils"></i> North Indian, Continental</h4>
+                    <h4><i class="fa-solid fa-location-dot"></i> Sadikpur, Patna</h4>
+                </div>
+            </div>
+        </div>
+        <div class="grid_item">
+            <div class="card">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image">
+                    <img src="b6cfbb9e61646419ceb4f74ccb3af178.webp" alt="Harilal" width="300" height="210">
+                </div>
+                <div class="card_content">
+                    <h2>Harilal's</h2>
+                    <h4><i class="fa-solid fa-utensils"></i> Mithai, South Indian, Street Food
+                    </h4>
+                    <h4><i class="fa-solid fa-location-dot"></i> Kankarbagh, Patna</h4>
+                </div>
+            </div>
+        </div>
+        <div class="grid_item">
+            <div class="card">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image">
+                    <img src="pexels-photo-958545.jpeg" alt="Bikaner" width="300" height="210">
+                </div>
+                <div class="card_content">
+                    <h2>Bikaner Sweets
+                    </h2>
+                    <h4><i class="fa-solid fa-utensils"></i> Fast Food, Sandwich, Shake
+                    </h4>
+                    <h4><i class="fa-solid fa-location-dot"></i> Kankarbagh, Patna</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Grid -->
+
+    <!-- <div class="G1">
+        <div class="item_at he"><img
+                src="idly-sambar-idli-with-sambhar-green-red-chutney-popular-south-indian-breakfast_466689-29517.avif"
+                alt="1" width="100%" height="100%"></div>
+        <div class="item_at sidebar"><img src="photo-1563310761-f8d8ed164063.webp" alt="2" width="50%" height="30%">
+        </div>
+        <div class="item_at content1"><img
+                src="gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai_188544-13480.webp" alt="3"
+                width="50%" height="30%"></div>
+        <div class="item_at"><img src="df84290c2dbd8dd6f6741e960fc6d1a1.webp" alt="4" width="50%" height="30%"></div>
+        <div class="item_at"><img src="360_F_331654539_FaCJJWVUB3SmrIPIkmeEOnk7TYgl7xQC.webp" alt="5" width="50%"
+                height="30%"></div>
+        <div class="item_at foo"><img src="noodles-with-beef-vegetables-black-table_141793-1729.webp" alt="6"
+                width="50%" height="30%"></div>
+    </div> -->
+
+
+
+    <!-- Explore our menu -->
+    <div class="menu1">
+        <div class="tag1">Our Menu</div>
+        <h2><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+                <path
+                    d="M 21.907 8.327 C 16.232 11.323, 11.935 17.401, 11.260 23.387 C 10.547 29.711, 12.477 29.350, 14.031 22.869 C 18.580 3.910, 45.420 3.910, 49.969 22.869 C 51.523 29.350, 53.453 29.711, 52.740 23.387 C 51.626 13.498, 42.681 6, 32 6 C 27.978 6, 25.025 6.681, 21.907 8.327 M 36.544 11.928 C 36.229 12.438, 36.865 13.140, 37.958 13.487 C 39.050 13.833, 41.487 15.920, 43.373 18.123 C 45.336 20.416, 47.078 21.683, 47.447 21.085 C 48.355 19.617, 46.577 16.663, 42.946 13.608 C 39.734 10.905, 37.533 10.328, 36.544 11.928 M 23 43.415 C 23 45.799, 23.118 45.829, 32 45.711 C 41.103 45.590, 41.491 45.443, 40.382 42.552 C 39.826 41.104, 39.623 41.121, 38.379 42.721 C 37.442 43.926, 37.161 44.015, 37.510 42.997 C 38.213 40.944, 29.117 40.532, 28.331 42.580 C 27.895 43.717, 27.556 43.699, 26.331 42.474 C 24.186 40.329, 23 40.664, 23 43.415 M 24.333 44.667 C 24.700 45.033, 25.300 45.033, 25.667 44.667 C 26.033 44.300, 25.733 44, 25 44 C 24.267 44, 23.967 44.300, 24.333 44.667 M 33.333 44.667 C 33.700 45.033, 34.300 45.033, 34.667 44.667 C 35.033 44.300, 34.733 44, 34 44 C 33.267 44, 32.967 44.300, 33.333 44.667"
+                    stroke="none" fill="#2a67fc" fill-rule="evenodd" />
+                <path
+                    d="M 22.389 25.430 C 21.393 28.025, 22.788 30.169, 25.246 29.820 C 26.898 29.585, 27.500 28.833, 27.500 27 C 27.500 25.167, 26.898 24.415, 25.246 24.180 C 23.893 23.988, 22.750 24.488, 22.389 25.430 M 36.389 25.430 C 35.393 28.025, 36.788 30.169, 39.246 29.820 C 40.898 29.585, 41.500 28.833, 41.500 27 C 41.500 25.167, 40.898 24.415, 39.246 24.180 C 37.893 23.988, 36.750 24.488, 36.389 25.430 M 11 41.800 C 11 56.661, 11.420 58, 16.078 58 C 19.122 58, 20.438 56.697, 21.381 52.750 C 21.821 50.908, 22.686 50, 24 50 C 25.314 50, 26.179 50.908, 26.619 52.750 C 27.567 56.719, 28.880 58, 32 58 C 35.120 58, 36.433 56.719, 37.381 52.750 C 37.821 50.908, 38.686 50, 40 50 C 41.314 50, 42.179 50.908, 42.619 52.750 C 42.980 54.263, 43.719 56.063, 44.260 56.750 C 45.513 58.341, 50.228 58.372, 51.800 56.800 C 53.319 55.281, 53.509 28, 52 28 C 51.387 28, 51 32.810, 51 40.429 C 51 50.742, 50.714 53.144, 49.318 54.539 C 47.741 56.116, 47.552 56.108, 46.318 54.420 C 45.593 53.429, 45 51.894, 45 51.009 C 45 48.622, 42.946 47, 39.922 47 C 36.900 47, 35.561 48.305, 34.647 52.140 C 33.729 55.990, 31.180 56.571, 29.863 53.230 C 27.854 48.135, 27.301 47.500, 24.589 47.178 C 21.427 46.802, 19 48.484, 19 51.051 C 19 52.044, 18.243 53.614, 17.318 54.539 C 14.125 57.732, 13 54.024, 13 40.309 C 13 32.770, 12.613 28, 12 28 C 11.382 28, 11 33.267, 11 41.800 M 28.200 34.200 C 27.540 34.860, 27 36.435, 27 37.700 C 27 39.793, 27.449 40, 32 40 C 36.551 40, 37 39.793, 37 37.700 C 37 34.681, 35.212 33, 32 33 C 30.570 33, 28.860 33.540, 28.200 34.200"
+                    stroke="none" fill="#9965fc" fill-rule="evenodd" />
+            </svg><i class="fa-solid fa-face-laugh-wink"></i><i class="fa-solid fa-face-laugh-wink"></i> What's on your
+            mind ? <i class="fa-solid fa-face-laugh-wink"></i><i class="fa-solid fa-face-laugh-wink"></i><svg
+                xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" version="1.1">
+                <path
+                    d="M 21.907 8.327 C 16.232 11.323, 11.935 17.401, 11.260 23.387 C 10.547 29.711, 12.477 29.350, 14.031 22.869 C 18.580 3.910, 45.420 3.910, 49.969 22.869 C 51.523 29.350, 53.453 29.711, 52.740 23.387 C 51.626 13.498, 42.681 6, 32 6 C 27.978 6, 25.025 6.681, 21.907 8.327 M 36.544 11.928 C 36.229 12.438, 36.865 13.140, 37.958 13.487 C 39.050 13.833, 41.487 15.920, 43.373 18.123 C 45.336 20.416, 47.078 21.683, 47.447 21.085 C 48.355 19.617, 46.577 16.663, 42.946 13.608 C 39.734 10.905, 37.533 10.328, 36.544 11.928 M 23 43.415 C 23 45.799, 23.118 45.829, 32 45.711 C 41.103 45.590, 41.491 45.443, 40.382 42.552 C 39.826 41.104, 39.623 41.121, 38.379 42.721 C 37.442 43.926, 37.161 44.015, 37.510 42.997 C 38.213 40.944, 29.117 40.532, 28.331 42.580 C 27.895 43.717, 27.556 43.699, 26.331 42.474 C 24.186 40.329, 23 40.664, 23 43.415 M 24.333 44.667 C 24.700 45.033, 25.300 45.033, 25.667 44.667 C 26.033 44.300, 25.733 44, 25 44 C 24.267 44, 23.967 44.300, 24.333 44.667 M 33.333 44.667 C 33.700 45.033, 34.300 45.033, 34.667 44.667 C 35.033 44.300, 34.733 44, 34 44 C 33.267 44, 32.967 44.300, 33.333 44.667"
+                    stroke="none" fill="#2a67fc" fill-rule="evenodd" />
+                <path
+                    d="M 22.389 25.430 C 21.393 28.025, 22.788 30.169, 25.246 29.820 C 26.898 29.585, 27.500 28.833, 27.500 27 C 27.500 25.167, 26.898 24.415, 25.246 24.180 C 23.893 23.988, 22.750 24.488, 22.389 25.430 M 36.389 25.430 C 35.393 28.025, 36.788 30.169, 39.246 29.820 C 40.898 29.585, 41.500 28.833, 41.500 27 C 41.500 25.167, 40.898 24.415, 39.246 24.180 C 37.893 23.988, 36.750 24.488, 36.389 25.430 M 11 41.800 C 11 56.661, 11.420 58, 16.078 58 C 19.122 58, 20.438 56.697, 21.381 52.750 C 21.821 50.908, 22.686 50, 24 50 C 25.314 50, 26.179 50.908, 26.619 52.750 C 27.567 56.719, 28.880 58, 32 58 C 35.120 58, 36.433 56.719, 37.381 52.750 C 37.821 50.908, 38.686 50, 40 50 C 41.314 50, 42.179 50.908, 42.619 52.750 C 42.980 54.263, 43.719 56.063, 44.260 56.750 C 45.513 58.341, 50.228 58.372, 51.800 56.800 C 53.319 55.281, 53.509 28, 52 28 C 51.387 28, 51 32.810, 51 40.429 C 51 50.742, 50.714 53.144, 49.318 54.539 C 47.741 56.116, 47.552 56.108, 46.318 54.420 C 45.593 53.429, 45 51.894, 45 51.009 C 45 48.622, 42.946 47, 39.922 47 C 36.900 47, 35.561 48.305, 34.647 52.140 C 33.729 55.990, 31.180 56.571, 29.863 53.230 C 27.854 48.135, 27.301 47.500, 24.589 47.178 C 21.427 46.802, 19 48.484, 19 51.051 C 19 52.044, 18.243 53.614, 17.318 54.539 C 14.125 57.732, 13 54.024, 13 40.309 C 13 32.770, 12.613 28, 12 28 C 11.382 28, 11 33.267, 11 41.800 M 28.200 34.200 C 27.540 34.860, 27 36.435, 27 37.700 C 27 39.793, 27.449 40, 32 40 C 36.551 40, 37 39.793, 37 37.700 C 37 34.681, 35.212 33, 32 33 C 30.570 33, 28.860 33.540, 28.200 34.200"
+                    stroke="none" fill="#9965fc" fill-rule="evenodd" />
+            </svg>
+        </h2>
+        <h2 id="jj">Explore Our Menu</h2>
+
+        <div class="grid1">
+            <div class="item01"><img class="grid_img1" src="20.webp" alt="1" width="400"></div>
+            <div class="item02"><img class="grid_img1" src="13.jpg" alt="2" width="400"></div>
+            <div class="item03"><img class="grid_img1" src="15.png" alt="3" width="400"></div>
+            <div class="item04"><img class="grid_img1" src="90.webp" alt="4" width="400"></div>
+            <div class="item05"><img class="grid_img1" src="11.webp" alt="5" width="400"></div>
+            <div class="item06"><img class="grid_img1" src="16.webp" alt="6" width="400"></div>
+            <div class="item07"><img class="grid_img1" src="34.webp" alt="7" width="400"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="top">Our Testimony <div>What our Customers Says</div>
+    </div>
+
+
+
+    <!-- Review -->
+    <section class="review">
+        <div class="grid_item_re">
+            <div class="card_re">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image_re">
+                    <img src="Screenshot 2024-03-06 084043.png" alt="1" width="100" height="110">
+                    <h2>Dhiraj Bhaiya</h2>
+                </div>
+                <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> 05/01/24</div>
+                <div class="card_content_re">
+                    <!-- <h2 id="re_left">Dhiraj Bhaiya</h2> -->
+                    <h4 class="op">Eureka is an indispensable app for anyone who loves good food and great dining
+                        experience. Eureka makes it easy to discover new eateries and plan memorable meals.</h4>
+
+                    <h5><i class="fa-solid fa-person"></i> 2,000 people found this useful</h5>
+                    <div>
+                        <hr>
+                    </div>
+                    <h5 id="op1"><i class="fa-regular fa-thumbs-up"></i>Was this review Useful ? <span> <button
+                                class="explore"><b>Yes</b> </button></span> <button class="explore"><b>No</b></button>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_item_re">
+            <div class="card_re">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image_re">
+                    <img src="Screenshot 2024-03-06 093718.png" alt="2" width="100" height="110">
+                    <h2>Shekhar Bhaiya</h2>
+
+                </div>
+                <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span> 25/02/24</span></div>
+                <div class="card_content_re">
+                    <!-- <h2 id="re_left">Dhiraj Bhaiya</h2> -->
+                    <h4 class="op">I've used Eureka extensively and their services are far better than any competitors.
+                        I genuinely feel that it cares its customers the most. I was able to navigate through what I was
+                        looking without any problem. I am looking forward to see the Takeaway option getting added in
+                        our city also.</h4>
+                    <h5><i class="fa-solid fa-person"></i> 1,780 people found this useful</h5>
+                    <div>
+                        <hr>
+                    </div>
+                    <h5 id="op1"><i class="fa-regular fa-thumbs-up"></i>Was this review Useful ? <span> <button
+                                class="explore"><b>Yes</b> </button></span> <button class="explore"><b>No</b></button>
+                    </h5>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_item_re">
+            <div class="card_re">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image_re">
+                    <img src="Screenshot 2024-03-06 092817.png" alt="3" width="100" height="110">
+                    <h2>Rinki Didi</h2>
+                </div>
+                <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span> 03/03/24</span></div>
+                <div class="card_content_re">
+                    <!-- <h2 id="re_left">Dhiraj Bhaiya</h2> -->
+                    <h4 class="op">Really a wonderful app. It's User-Interface is easy to use. The restaurants and
+                        dishes, are well organised so that customers could easily choose from them. I get heavy discount
+                        each time as I know the Founder and CEO of this app. Overall a great experience while using this
+                        app.</h4>
+                    <h5><i class="fa-solid fa-person"></i> 4,520 people found this useful</h5>
+                    <div>
+                        <hr>
+                    </div>
+                    <h5 id="op1"><i class="fa-regular fa-thumbs-up"></i>Was this review Useful ? <span> <button
+                                class="explore"><b>Yes</b> </button></span> <button class="explore"><b>No</b></button>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_item_re">
+            <div class="card_re">
+                <!-- <h1>Top Restaurant Chains in Patna</h1> -->
+                <div class="card_image_re">
+                    <img src="640px-Narendra_modi.webp" alt="4" width="100" height="110">
+                    <h2>PM Narendra Modi</h2>
+                </div>
+                <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>29/02/24</span></div>
+                <div class="card_content_re">
+                    <!-- <h2 id="re_left">Dhiraj Bhaiya</h2> -->
+                    <h4 id="Lok">As Prime Minister of India, always I have to travel from one part of country to
+                        another. One day when I was in Bihar(Patna) doing rally in Gandhi-Maidan due to Lok Sabha
+                        election, I got hungry.I told my SPG to have some arrangement of Food. They told that due to
+                        security reason, it will take some time. Then I decide to order food myself from your app
+                        (Eureka). The food is very delicious. </h4>
+                    <h5><i class="fa-solid fa-person"></i> 91,780 people found this useful</h5>
+                    <div>
+                        <hr>
+                    </div>
+                    <h5 id="op2"><i class="fa-regular fa-thumbs-up"></i>Was this review Useful ? <span> <button
+                                class="explore"><b>Yes</b> </button></span> <button class="explore"><b>No</b></button>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Slider -->
+    <!-- <main>
+        <img src="1_Z.png" class="slide" alt="1" width="1000" height="500">
+        <img src="2_Z.png" class="slide" alt="2" width="1000" height="500">
+        <img src="Screenshot 2024-03-06 185401-fotor-2024030619195.png" class="slide" alt="3" width="1000" height="500">
+        <img src="Screenshot 2024-03-06 185225-fotor-20240306191944.png" class="slide" alt="4" width="1000"
+            height="500">
+        <img src="3_Z.png" class="slide" alt="5" width="1000" height="500">
+        <img src="Screenshot 2024-03-06 185630-fotor-2024030619185.png" class="slide" alt="6" width="1000" height="500">
+        <img src="Screenshot 2024-03-06 185207-fotor-20240306192215.png" class="slide" alt="7" width="1000"
+            height="500">
+        <!-- <img src="1_Z.png" class="slide" alt="8"> -->
+    <!-- <img src="1_Z.png" class="slide" alt="9"> -->
+    <!-- <img src="1_Z.png" class="slide" alt="1"> -->
+
+    <!-- 
+    </main>
+    <div class="nav_s">
+        <button onclick="goPrev">Previous</button>
+        <button onclick="goNext">Next</button>
+    </div> -->
+
+
+    <!-- Fun -->
+    <section class="fun">
+        <div class="fun1">
+            <h1>.</h1>
+            <h1>.</h1>
+        </div>
+    </section>
+    <section class="we">
+        <div id="are">
+            <h1>Fun Reading Section For Our Food Lovers</h1>
+        </div>
+    </section>
+
+
+    <!-- Anshu -->
+    <section class="c1">
+        <div class="slide_con">
+            <div class="slider">
+                <img src="01.png" class="slide1" alt="1" width="1000" height="500">
+                <!-- <img src="1_Z.png" class="slide1" alt="1" width="1000" height="500"> -->
+                <img src="04.png" class="slide2" alt="2" width="1000" height="500">
+                <img src="98.png" class="slide3" alt="3" width="1000" height="500">
+                <img src="03.png" class="slide3" alt="4" width="1000" height="500">
+                <img src="Screenshot 2024-03-06 185225-fotor-20240306191944.png" class="slide4" alt="5" width="1000"
+                    height="500">
+                <img src="02.png" class="slide5" alt="6" width="1000" height="500">
+                <img src="06.png" class="slide6" alt="7" width="1000" height="500">
+                <img src="Screenshot 2024-03-06 185300-fotor-20240306192055.png" class="slide7" alt="8" width="1000"
+                    height="500">
+                <img src="07.png" class="slide7" alt="9" width="1000" height="500">
+            </div>
+            <div class="slider_nav">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+                <a href="#slide4"></a>
+                <a href="#slide5"></a>
+                <a href="#slide6"></a>
+                <a href="#slide7"></a>
+                <a href="#slide8"></a>
+                <a href="#slide9"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Anshu Raj -->
+
+    <!-- <div class="container7">
+            <img src="poi.avif" class="arrow left" width="100">
+            <img src="poi.avif" class="arrow right" width="100"> -->
+    <!-- <div class="frame7">
+                <div class="slider7">
+                    <img src="1_Z.png" alt="1" class="image7">
+                    <img src="2_Z.png" alt="2" class="image7">
+                    <img src="Screenshot 2024-03-06 185401-fotor-2024030619195.png" alt="3" class="image7">
+                    <img src="Screenshot 2024-03-06 185225-fotor-20240306191944.png" alt="4" class="image7">
+                    <img src="3_Z.png" alt="5" class="image7">
+                    <img src="Screenshot 2024-03-06 185630-fotor-2024030619185.png" alt="6" class="image7">
+                    <img src="Screenshot 2024-03-06 185300-fotor-20240306192055.png" alt="6" class="image7">
+                </div>
+            </div>
+            <img src="poi.avif" class="arrow right" width="100"> -->
+
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+
+    <!-- <script src="script.js"></script> -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_con">
+            <div class="footer_logo">
+                <img src="food-shopping-logo-template-design_460848-10299.jpg" alt="logo" width="100" <b id="q"> <i
+                    class="fa-solid fa-ghost"></i>Eureka</b>
+            </div>
+            <div class="link_list">
+                <h3>Main Links</h3>
+                <ul>
+                    <li>Order Tracking</li>
+                    <li>New Order</li>
+                    <li>Contact Us</li>
+                    <li>News & Blogs</li>
+                </ul>
+            </div>
+            <div class="link_list">
+                <h3>Support</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy</li>
+                    <li>Terms and Condition</li>
+                    <!-- <li>News & Blogs</li> -->
+                </ul>
+            </div>
+            <div class="news">
+                <h3>Support</h3>
+                <input type="email" placeholder="Enter Your Email...">
+                <h3>Follow Us</h3>
+                <div class="icon_con">
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
+                            class="fa-brands fa-square-instagram"></i> <i class="fa-brands fa-youtube"></i> <i
+                            class="fa-brands fa-square-snapchat"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Parallel -->
+    <section class="p1">
+        <div class="ptext1">
+            <span class="textbg">For better experience, download the <i class="fa-solid fa-ghost"></i>Eureka app
+                now</span>
+            <div><img src="google-play-and-apple-app-store-logos-22.webp" alt="app" width="400"></div>
+        </div>
+    </section>
+    <section class="section_sec_light">
+        <h2><img src="food-shopping-logo-template-design_460848-10299.jpg" alt="logo" width="100"><b> <i
+                    class="fa-solid fa-ghost"></i>Eureka</b>
+            <li>@2024 Anshu Technologies Pvt Ltd</li>
+        </h2>
+
+        <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+            Policies. All trademarks are properties of their respective owners. 2008-2024 © <i
+                class="fa-solid fa-ghost"></i>EUREKA™ Ltd. All rights
+            reserved.
+        </p>
+    </section>
+</body>
+
+</html>
